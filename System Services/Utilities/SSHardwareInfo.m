@@ -193,6 +193,17 @@
                 newDeviceType = @"iPhone X (CDMA+GSM/LTE)";
             else if ([deviceType isEqualToString:@"iPhone10,6"])
                 newDeviceType = @"iPhone X (GSM/LTE)";
+            else if ([deviceType isEqualToString:@"iPhone11,2"])
+                newDeviceType = @"iPhone XS";
+            else if ([deviceType isEqualToString:@"iPhone11,4"])
+                newDeviceType = @"iPhone XS Max";
+            else if ([deviceType isEqualToString:@"iPhone11,6"])
+                newDeviceType = @"iPhone XS Max";
+            else if ([deviceType isEqualToString:@"iPhone11,8"])
+                newDeviceType = @"iPhone XR";
+            // Catch All iPhone
+            else if ([deviceType hasPrefix:@"iPhone"])
+                newDeviceType = @"iPhone";
             // iPods
             else if ([deviceType isEqualToString:@"iPod1,1"])
                 newDeviceType = @"iPod Touch 1G";
@@ -206,6 +217,9 @@
                 newDeviceType = @"iPod Touch 5G";
             else if ([deviceType isEqualToString:@"iPod7,1"])
                 newDeviceType = @"iPod Touch 6G";
+            // Catch All iPod
+            else if ([deviceType hasPrefix:@"iPod"])
+                newDeviceType = @"iPod";
             // iPads
             else if ([deviceType isEqualToString:@"iPad1,1"])
                 newDeviceType = @"iPad";
@@ -273,6 +287,10 @@
                 newDeviceType = @"iPad Pro 10.5 (WiFi)";
             else if ([deviceType isEqualToString:@"iPad7,4"])
                 newDeviceType = @"iPad Pro 10.5 (Cellular)";
+            else if ([deviceType isEqualToString:@"iPad7,5"])
+                newDeviceType = @"iPad (6th Gen - WiFi)";
+            else if ([deviceType isEqualToString:@"iPad7,6"])
+                newDeviceType = @"iPad (6th Gen - Cellular)";
             // Catch All iPad
             else if ([deviceType hasPrefix:@"iPad"])
                 newDeviceType = @"iPad";
@@ -283,7 +301,13 @@
                 newDeviceType = @"Apple TV 3";
             else if ([deviceType isEqualToString:@"AppleTV3,2"])
                 newDeviceType = @"Apple TV 3 (2013)";
-
+            else if ([deviceType isEqualToString:@"AppleTV5,3"])
+                newDeviceType = @"Apple TV (4th Gen)";
+            else if ([deviceType isEqualToString:@"AppleTV6,2"])
+                newDeviceType = @"Apple TV 4K";
+            // Catch All AppleTV
+            else if ([deviceType hasPrefix:@"AppleTV"])
+                newDeviceType = @"AppleTV";
             // Return the new device type
             return newDeviceType;
         }
