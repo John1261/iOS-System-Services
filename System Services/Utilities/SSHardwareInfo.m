@@ -291,6 +291,22 @@
                 newDeviceType = @"iPad (6th Gen - WiFi)";
             else if ([deviceType isEqualToString:@"iPad7,6"])
                 newDeviceType = @"iPad (6th Gen - Cellular)";
+            else if ([deviceType isEqualToString:@"iPad8,1"])
+                newDeviceType = @"iPad Pro 11-inch";
+            else if ([deviceType isEqualToString:@"iPad8,2"])
+                newDeviceType = @"iPad Pro 11-inch";
+            else if ([deviceType isEqualToString:@"iPad8,3"])
+                newDeviceType = @"iPad Pro 11-inch";
+            else if ([deviceType isEqualToString:@"iPad8,4"])
+                newDeviceType = @"iPad Pro 11-inch";
+            else if ([deviceType isEqualToString:@"iPad8,5"])
+                newDeviceType = @"iPad Pro 12.9-inch (3rd gen)";
+            else if ([deviceType isEqualToString:@"iPad8,6"])
+                newDeviceType = @"iPad Pro 12.9-inch (3rd gen)";
+            else if ([deviceType isEqualToString:@"iPad8,7"])
+                newDeviceType = @"iPad Pro 12.9-inch (3rd gen)";
+            else if ([deviceType isEqualToString:@"iPad8,8"])
+                newDeviceType = @"iPad Pro 12.9-inch (3rd gen)";
             // Catch All iPad
             else if ([deviceType hasPrefix:@"iPad"])
                 newDeviceType = @"iPad";
